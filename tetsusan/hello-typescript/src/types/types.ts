@@ -1,4 +1,4 @@
-export type TileData = {
+export type TileDate = {
   image: string;
   keyword: string[];
   title: string;
