@@ -7,7 +7,7 @@ import {TileDate} from "../../types/types";
 
 const ImageItemList: FC = () => {
   const [data, setData] = useState<TileDate[]>([]);
-  const { keyword } = useParams<TileDate>();
+  const {keyword} = useParams();
 
   const getData = async (searchWord: string | undefined) => {
     const db = firebase.firestore();
@@ -37,3 +37,5 @@ const ImageItemList: FC = () => {
     </div>
   )
 }
+
+export default ImageItemList;
